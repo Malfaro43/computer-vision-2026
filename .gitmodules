@@ -1,0 +1,6 @@
+[submodule "xgo-robot"]
+	path = xgo-robot
+	url = https://github.com/ChampPhil/xgo_robot_kit_playing_fetch.git
+[submodule "drone-robot"]
+	path = drone-robot
+	url = https://github.com/Malfaro43/drone-robot.git
