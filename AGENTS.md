@@ -3,6 +3,6 @@
 This root is a parent repo that only holds submodules. Do project work inside the project folder and read that folder's own guide first.
 
 - `xgo-robot/`: XGO Lite robot dog. Read `xgo-robot/AGENTS.md` and `xgo-robot/docs/PROGRESS.md` before touching hardware. Its remote is `ChampPhil/xgo_robot_kit_playing_fetch`. The robot's checkout is still `~/project/xgo_robot_kit_playing_fetch` on the Pi.
-- `drone-robot/`: new drone project (`Malfaro43/drone-robot`).
+- `drone-robot/`: RoboMaster TT drone + the laptop bridge that drives both robots (`Malfaro43/drone-robot`). Read `drone-robot/AGENTS.md` first; `drone-robot/docs/HARDWARE_DAY.md` before any hardware session. Tests: `cd drone-robot && .venv/bin/python -m pytest`.
 
 Commit inside a submodule first, then `git add <folder>` in the parent to bump its pointer. Never `git add .` inside `xgo-robot/`: `xgo_starter.py` and `AGENTS.md` are untracked on purpose.

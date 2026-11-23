@@ -5,7 +5,9 @@ Umbrella repository for the 2026 computer-vision robotics projects. Each project
 | Folder | Repository | Project |
 | --- | --- | --- |
 | [`xgo-robot/`](xgo-robot) | [ChampPhil/xgo_robot_kit_playing_fetch](https://github.com/ChampPhil/xgo_robot_kit_playing_fetch) | XGO Lite robot dog: color-block detection, teleop, fetch/pickup |
-| [`drone-robot/`](drone-robot) | [Malfaro43/drone-robot](https://github.com/Malfaro43/drone-robot) | Drone robot (new) |
+| [`drone-robot/`](drone-robot) | [Malfaro43/drone-robot](https://github.com/Malfaro43/drone-robot) | RoboMaster TT drone: searches for a target pad and maps a safe route, which the XGO dog then walks (laptop bridge for both robots) |
+
+The two projects work together: `drone-robot` drives both robots from the laptop through its `tello_xgo_bridge`, and the dog's side of that link (`POST /command` with a stop-if-silent watchdog) lives in `xgo-robot/scripts/xgo_robot/`. Start with [`drone-robot/README.md`](drone-robot/README.md); try it all in simulation with `drone-robot/scripts/run_mission.py --sim`.
 
 ## Clone
 
